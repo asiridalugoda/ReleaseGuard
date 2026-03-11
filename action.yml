@@ -1,4 +1,4 @@
-name: ReleaseGuard
+name: Artifact Policy Engine
 description: Scan, harden, sign, and verify release artifacts before they ship.
 author: Helixar AI
 
@@ -58,7 +58,7 @@ runs:
     - name: Install releaseguard
       shell: bash
       run: |
-        curl -sSfL https://github.com/Helixar-AI/ReleaseGuard/releases/latest/download/install.sh | sh
+        curl -sSfL https://raw.githubusercontent.com/Helixar-AI/ReleaseGuard/main/scripts/install.sh | sh
         echo "$HOME/.local/bin" >> $GITHUB_PATH
 
     - name: Run releaseguard check

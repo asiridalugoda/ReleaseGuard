@@ -160,6 +160,27 @@ Renders as: [\![ReleaseGuard](https://img.shields.io/badge/releaseguard-passing-
 
 ---
 
+## Use with OpenClaw
+
+Install the ReleaseGuard skill from [ClawHub](https://github.com/openclaw/clawhub):
+
+```bash
+clawhub install releaseguard
+```
+
+Then just ask your agent in plain English:
+
+> *"Scan my ./dist folder for secrets and misconfigs"*
+> *"Generate an SBOM for this release"*
+> *"Sign the artifact and attest provenance"*
+> *"Run the full hardening pipeline on ./dist"*
+
+The skill maps natural language to the full `releaseguard` CLI — check, fix, sbom, sign, attest, verify, report, and vex — and installs the binary automatically if it isn't present.
+
+**Publish your own skill** — the source is at [`skills/releaseguard/SKILL.md`](skills/releaseguard/SKILL.md).
+
+---
+
 ## Configuration
 
 ```yaml
