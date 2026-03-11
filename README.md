@@ -27,7 +27,7 @@ That means catching things that slip through everything else:
 
 ```bash
 # Install (macOS / Linux)
-curl -sSfL https://github.com/Helixar-AI/ReleaseGuard/releases/latest/download/install.sh | sh
+curl -sSfL https://raw.githubusercontent.com/Helixar-AI/ReleaseGuard/main/scripts/install.sh | sh
 
 # Or build from source
 git clone https://github.com/Helixar-AI/ReleaseGuard
@@ -131,6 +131,18 @@ releaseguard harden ./dist
 - **Historical evidence store** and cross-repo dashboards
 - **SBOM registry** with diff, CVE search, and vendor submission
 - **SSO** (SAML / OIDC), compliance reports (SOC 2, ISO 27001, NTIA)
+
+---
+
+## Add to Your README
+
+Show that your release is clean:
+
+```markdown
+[\![ReleaseGuard](https://img.shields.io/badge/releaseguard-passing-brightgreen?logo=shield&logoColor=white)](https://github.com/Helixar-AI/ReleaseGuard)
+```
+
+Renders as: [\![ReleaseGuard](https://img.shields.io/badge/releaseguard-passing-brightgreen?logo=shield&logoColor=white)](https://github.com/Helixar-AI/ReleaseGuard)
 
 ---
 
