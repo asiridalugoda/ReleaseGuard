@@ -17,6 +17,10 @@ sbom:
   enrich_cve: false
 
 scanning:
+  exclude_paths:
+    - bin
+    - test/fixtures
+    - examples
   secrets:
     enabled: true
   metadata:
