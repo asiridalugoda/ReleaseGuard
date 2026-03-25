@@ -44,7 +44,7 @@ checksum:
 
 release:
   github:
-    owner: Helixar-AI
+    owner: asiridalugoda
     name: ReleaseGuard
   name_template: "v{{.Version}}"
   draft: false
@@ -74,24 +74,7 @@ release:
   footer: |
     **Full Changelog**: https://github.com/Helixar-AI/ReleaseGuard/compare/{{.PreviousTag}}...{{.Tag}}
 
-brews:
-  - name: releaseguard
-    homepage: https://github.com/Helixar-AI/ReleaseGuard
-    description: "Artifact policy engine — scan, harden, sign, and verify release artifacts before they ship."
-    license: MIT
-    repository:
-      owner: Helixar-AI
-      name: homebrew-tap
-      branch: main
-      token: "{{ .Env.HOMEBREW_TAP_TOKEN }}"
-    directory: Formula
-    commit_author:
-      name: releaseguard-bot
-      email: bot@helixar.ai
-    install: |
-      bin.install "releaseguard"
-    test: |
-      system "#{bin}/releaseguard", "--version"
+# brews: disabled — no homebrew-tap in this fork
 
 announce:
   skip: "true"
